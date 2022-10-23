@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --orange-ideia: #fa9401;
+  --black-ideia: #444242;
+  --orange-iphone: #ffb64e;
+  font-family: "Roboto", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+} 
+.document-home {
+}
+.main {
+  padding: 15px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ------------------- HOME ------------------*/
+.main-home {
+  background-color: var(--black-ideia);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* SELECT IDIOMA */
+.selector {
+  position: relative;
+}
+#selectField {
+  width: 100%;
+  padding: 5px 0.843rem;
+  font-size: 12px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#selectField div {
+  display: flex;
+  align-items: center;
+}
+#selectFlag {
+  width: 25px;
+  border-radius: 25px;
+  margin: 0 10px;
+}
+#list {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  position: absolute;
+}
+.options {
+  width: 100%;
+  font-size: 12px;
+  padding: 15px 0 15px 40px;
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+  border-radius: 6px;
+}
+.options p {
+  position: relative;
+  top: 4px;
+}
+.options img {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  width: 25px;
+  border-radius: 25px;
+}
+.options:hover {
+  background-color: #eee;
+}
+.hide {
+  display: none;
+}
+#arrow-icon {
+  transition: 0.2s;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* MENU SANDUICHE */
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#checkbox-menu {
+  position: absolute;
+  opacity: 0;
+}
+
+label {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 20px;
+  width: 26px;
+}
+
+label span {
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 30px;
+  background: #fff;
+  transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1) {
+  top: 0;
+}
+
+label span:nth-child(2) {
+  top: 8px;
+}
+
+label span:nth-child(3) {
+  top: 16px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+.user-paths-home {
+  margin: 0 auto;
+  text-align: center;
+}
+.user-paths-home div {
+  margin-top: 53px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user-paths-home .btn-paths {
+  color: #fff;
+  border: 1px solid var(--orange-ideia);
+  width: 265px;
+  margin-bottom: 15px;
+  padding: 15px 0;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.user-paths-home .btn-search {
+  background-color: var(--orange-ideia);
+  border: none;
+}
+.footer-social-media {
+  margin: 0 auto;
+}
+.footer-social-media a {
+  text-decoration: none;
+}
+.footer-social-media img {
+  margin-right: 15px;
+}
+
+/* ------------------ CONTACT PAGE ------------------*/
+.main-contact {
+  padding: 0;
+}
+.header-contact {
+  background-color: var(--black-ideia);
+  padding: 0.815rem 15px;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+.logo-cart-menu {
+  display: flex;
+  align-items: center;
+}
+.little-logo {
+  width: 122px;
+  margin-right: 30px;
+}
+.cart-notification-nav {
+  position: relative;
+  display: flex;
+}
+.cart-notification-nav img {
+  margin-right: 17px;
+}
+.number-cart-notification {
+  position: absolute;
+  top: -7px;
+  left: 13px;
+
+  background: var(--orange-ideia);
+  font-size: 12px;
+  color: white;
+
+  padding: 0.063rem 0.29rem;
+  border-radius: 50%;
+}
+.contact-info > p {
+  background-color: #f2f2f2;
+  color: var(--orange-ideia);
+  font-weight: bold;
+  padding: 0.969rem 15px;
+  margin-bottom: 15px;
+}
+.forms-contact {
+  padding: 0 15px;
+  margin-bottom: 45px;
+}
+
+.forms-contact .contact {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 18px 0;
+}
+.forms-contact .location {
+  padding-top: 0;
+}
+.forms-contact .contact span {
+  display: block;
+  margin-left: 15px;
+}
+.social-media {
+  padding: 0 29px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-contact footer {
+  position: absolute;
+  background: #fa9401;
+  width: 100vw;
+  bottom: 0;
+  padding: 0.969rem;
+  text-align: center;
+}
+.main-contact footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: .2s;
+}
+.main-contact footer a:hover {
+  color: #ffb64e;
+}
+
+/* ---------------RESPONSIVIDADE DA HOME ------------*/
+@media screen and (max-width: 640px) {
+  .user-paths-home {
+    margin: 85px auto;
+  }
+}
+@media screen and (min-width: 640px) {
+  .main-home {
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  .user-paths-home div {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .user-paths-home div a {
+    margin-right: 15px;
+  }
+
+}
+@media screen and (min-width: 640px) and (max-height: 500px) {
+  .footer-social-media {
+    display: none;
+  }
+}
+/* REGRA CSS PARA IPHONE 5S */
+@media only screen and (width: 320px) and (height: 568px) {
+  .main-home {
+    background-color: var(--orange-iphone);
+  }
+  .user-paths-home .btn-paths {
+    background-color: var(--black-ideia);
+    border: 2px solid #fff;
+  }
+  .user-paths-home .btn-search {
+    background-color: var(--orange-ideia);
+    border: 2px solid var(--black-ideia);
+  }
+}
+
+/* PAGINA DE CONTATO DESKTOP */
+@media screen and (min-width: 768px) {
+  .main-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-contact {
+    width: 100vw;
+  }
+  .logo-cart-menu {
+    width: 55%;
+    justify-content: space-between;
+  }
+  .contact-info {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .main-contact footer {
+    width: 300px;
+    bottom: 100px;
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width:767px) {
+  .social-media {
+    justify-content: center;
+  }
+  .social-media a{
+    margin-right: 33px;
+  }
+}
